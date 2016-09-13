@@ -1,6 +1,5 @@
 from __future__ import division
 from __future__ import print_function
-import math
 
 def read_file(file_name):
     """
@@ -24,6 +23,8 @@ def read_file(file_name):
             dna = ""
         else:
             dna += line
+    names.append(name)
+    dnas.append(dna)
 
     return (names[1:], dnas[1:])
 
